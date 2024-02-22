@@ -1,3 +1,0 @@
-C:/IT/-3kli6t/projects/build/CMakeFiles/Sorting.dir
-C:/IT/-3kli6t/projects/build/CMakeFiles/edit_cache.dir
-C:/IT/-3kli6t/projects/build/CMakeFiles/rebuild_cache.dir

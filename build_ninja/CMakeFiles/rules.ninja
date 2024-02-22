@@ -6,10 +6,18 @@
 # It is included in the main 'build.ninja'.
 
 # =============================================================================
-# Project: Sorting
+# Project: -3kli6t
 # Configurations: 
 # =============================================================================
 # =============================================================================
+
+#############################################
+# Rule for running custom commands.
+
+rule CUSTOM_COMMAND
+  command = $COMMAND
+  description = $DESC
+
 
 #############################################
 # Rule for compiling CXX files.
@@ -28,23 +36,6 @@ rule CXX_EXECUTABLE_LINKER__Sorting_
   command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && C:\Users\Admin\Downloads\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5\mingw64\bin\c++.exe $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
-
-
-#############################################
-# Rule for running custom commands.
-
-rule CUSTOM_COMMAND
-  command = $COMMAND
-  description = $DESC
-
-
-#############################################
-# Rule for re-running cmake.
-
-rule RERUN_CMAKE
-  command = "C:\Program Files\CMake\bin\cmake.exe" --regenerate-during-build -SC:\IT\-3kli6t\projects\Sorting -BC:\IT\-3kli6t\projects\build
-  description = Re-running CMake...
-  generator = 1
 
 
 #############################################

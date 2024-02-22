@@ -1,0 +1,5 @@
+C:/IT/-3kli6t/build_ninja/CMakeFiles/edit_cache.dir
+C:/IT/-3kli6t/build_ninja/CMakeFiles/rebuild_cache.dir
+C:/IT/-3kli6t/build_ninja/Sorting/CMakeFiles/Sorting.dir
+C:/IT/-3kli6t/build_ninja/Sorting/CMakeFiles/edit_cache.dir
+C:/IT/-3kli6t/build_ninja/Sorting/CMakeFiles/rebuild_cache.dir

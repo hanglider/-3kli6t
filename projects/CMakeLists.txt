@@ -1,3 +1,7 @@
-project(Sortings)
+cmake_minimum_required(VERSION 3.2...3.27.5)
 
-add_executable(${PROJECT_NAME} main.cpp)
+project(-3kli6t)
+
+add_subdirectory(Sorting)
+
+set(CMAKE_SUPPRESS_REGENERATION true)
