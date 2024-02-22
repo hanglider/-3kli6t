@@ -78,8 +78,6 @@ build Sorting/CMakeFiles/Sorting.dir/main.cpp.obj: CXX_COMPILER__Sorting_unscann
   FLAGS = -std=gnu++23
   OBJECT_DIR = Sorting\CMakeFiles\Sorting.dir
   OBJECT_FILE_DIR = Sorting\CMakeFiles\Sorting.dir
-  TARGET_COMPILE_PDB = Sorting\CMakeFiles\Sorting.dir\
-  TARGET_PDB = Sorting\Sorting.pdb
 
 
 # =============================================================================
@@ -94,10 +92,9 @@ build Sorting/Sorting.exe: CXX_EXECUTABLE_LINKER__Sorting_ Sorting/CMakeFiles/So
   OBJECT_DIR = Sorting\CMakeFiles\Sorting.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = Sorting\CMakeFiles\Sorting.dir\
   TARGET_FILE = Sorting\Sorting.exe
   TARGET_IMPLIB = Sorting\libSorting.dll.a
-  TARGET_PDB = Sorting\Sorting.pdb
+  TARGET_PDB = Sorting.exe.dbg
 
 
 #############################################
