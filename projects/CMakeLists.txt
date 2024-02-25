@@ -4,5 +4,6 @@ project(-3kli6t)
 
 add_subdirectory(Sorting)
 add_subdirectory(Fibonacci_numbers)
+add_subdirectory(Diff_enviroments)
 
 set(CMAKE_SUPPRESS_REGENERATION true)
