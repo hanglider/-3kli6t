@@ -19,13 +19,15 @@ cmake --build .
 set arr[0].file=run_Sorting.bat
 set arr[1].file=run_Fibonacci_numbers.bat
 set arr[2].file=Diff_enviroments.bat
+set arr[3].file=OOP_console.bat
 
 set arr[0].folder=Sorting
 set arr[1].folder=Fibonacci_numbers
 set arr[2].folder=Diff_enviroments
+set arr[3].folder=OOP_console
 
 
-for /L %%i in (0, 1, 2) do ( 
+for /L %%i in (0, 1, 2, 3) do ( 
 	copy ..\%SOURCE_FOLDER%\!arr[%%i].folder!\!arr[%%i].file! .\!arr[%%i].folder!
 )
 
