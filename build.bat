@@ -17,13 +17,14 @@ cmake -G %BUILD_TYPE% ..\%SOURCE_FOLDER%
 cmake --build .
 
 set arr[0].file=run_Sorting.bat
+set arr[1].file=run_Fibonacci_numbers.bat
 
 set arr[0].folder=Sorting
+set arr[1].folder=Fibonacci_numbers
 
 
-::for /L %%i in (0) do ( 
-::	copy ..\%SOURCE_FOLDER%\!arr[%%i].folder!\!arr[%%i].file! .\!arr[%%i].folder!
-::)
-copy ..\%SOURCE_FOLDER%\bubble_sort\run_bubble_sort.bat .\bubble_sort
+for /L %%i in (0, 1) do ( 
+	copy ..\%SOURCE_FOLDER%\!arr[%%i].folder!\!arr[%%i].file! .\!arr[%%i].folder!
+)
 
 
