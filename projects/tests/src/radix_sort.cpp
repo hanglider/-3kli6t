@@ -1,10 +1,4 @@
-#include 'Radix_sort.h'
-
-/*template <typename T>
-void count_sort(T arr[], const T n, T exp);
-
-template <typename T>
-int find_max(T arr[], T n);*/
+#include "radix_sort.h"
 
 template <typename T>
 void RadixSort::sort_by_radix(T arr[], const T n) {

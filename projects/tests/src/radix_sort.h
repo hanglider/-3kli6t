@@ -1,8 +1,6 @@
 #ifndef SRC_RADIX_SORT_H
 #define SRC_RADIX_SORT_H
 
-#include <vector>
-
 namespace RadixSort {
     template <typename T>
     void sort_by_radix(T arr[], const T n);
