@@ -52,7 +52,7 @@ int main() {
 
     SetConsoleOutputCP(CP_UTF8);
 
-    int arr[] = { 8, 2, 5 , 1, 0};
+    int arr[] = { 0xf, 2, 5 , 1, 0};
     const int arr_size = sizeof(arr) / sizeof(arr[0]);
     std::cout << "Массив до сортировки:";
     for (int i = 0; i < arr_size; i++) {
