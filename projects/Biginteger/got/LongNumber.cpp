@@ -1,4 +1,5 @@
-#include "main.h"
+#include <string>
+#include "LongNumber.h"
 
 LongNumber::LongNumber(const std::string& num) : number(num) {}
 
@@ -35,7 +36,6 @@ LongNumber LongNumber::operator+(const LongNumber& other) const {
     int carry = 0;
     int i = number.length() - 1;
     int j = other.number.length() - 1;
-
     while (i >= 0 || j >= 0 || carry != 0) {
         int digit1 = (i >= 0) ? number[i--] - '0' : 0;
         int digit2 = (j >= 0) ? other.number[j--] - '0' : 0;
@@ -122,7 +122,7 @@ void LongNumber::divide(const LongNumber& dividend, const LongNumber& divisor, L
         LongNumber temp_quotient = LongNumber("1");
 
         while (current_dividend >= (temp_divisor + temp_divisor)) {
-            temp_divisor = temp_divisor + temp_divisor;
+            temp_divisor = temp_divisor + temp_divisor;\
             temp_quotient = temp_quotient + temp_quotient;
         }
 

@@ -1,8 +1,6 @@
-cmake_minimum_required(VERSION 3.26)
-project(Biginteger)
+project(BigInteger)
 
-set(CMAKE_CXX_STANDARD 23)
+add_library(LongNumber_lib "")
 
-add_executable(Biginteger
-        main.cpp
-        main.h)
+add_subdirectory(got)
+add_subdirectory(test)
