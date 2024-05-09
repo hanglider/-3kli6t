@@ -25,7 +25,7 @@ set arr[1].folder=run_double_linked_list_tests
 set arr[2].folder=run_vector_tests
 
 
-for /L %%i in (0, 1, 2) do ( 
+for /L %%i in (1, 2) do ( 
 	copy ..\%SOURCE_FOLDER%\!arr[%%i].folder!\!arr[%%i].file! .\!arr[%%i].folder!
 )
 

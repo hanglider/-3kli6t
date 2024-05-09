@@ -7,10 +7,6 @@ set(TESTS_LIB "tests_lib")
 enable_testing()
 add_subdirectory(lib/googletest)
 
-add_subdirectory(BigInteger)
-add_subdirectory(Diff_enviroments)
-add_subdirectory(Fibonacci_numbers)
-add_subdirectory(Sorting)
 add_subdirectory(tests)
 
 set(CMAKE_SUPPRESS_REGENERATION true)
