@@ -1,10 +1,10 @@
-#include "doubly_linked_list.h"
+#include "double_linked_list.h"
 #include <iostream>
 
-using ITrofimov::DoublyLinkedList;
+using ITrofimov::DoubleLinkedList;
 
 template <typename T>
-DoublyLinkedList<T>::~DoublyLinkedList() noexcept {
+DoubleLinkedList<T>::~DoubleLinkedList() noexcept {
     Node* node;
     while(begin != end){
         if(end == nullptr) break;
@@ -16,7 +16,7 @@ DoublyLinkedList<T>::~DoublyLinkedList() noexcept {
 }
 
 template <typename T>
-void DoublyLinkedList<T>::push_back(const T& value) noexcept{
+void DoubleLinkedList<T>::push_back(const T& value) noexcept{
     Node* node = new Node(value);
     node->prev = end;
     if(end != nullptr){
@@ -28,7 +28,7 @@ void DoublyLinkedList<T>::push_back(const T& value) noexcept{
 }
 
 template <typename T>
-void DoublyLinkedList<T>::print() const noexcept {
+void DoubleLinkedList<T>::print() const noexcept {
     Node *ptr = begin;
     while(ptr != end){
         std::cout << ptr->value << "\n";
@@ -38,7 +38,7 @@ void DoublyLinkedList<T>::print() const noexcept {
 }
 
 template <typename T>
-bool DoublyLinkedList<T>::remove_first(const T& value) noexcept{
+bool DoubleLinkedList<T>::remove_first(const T& value) noexcept{
     Node* node = begin;
     if (begin == nullptr)
         return false;
@@ -70,7 +70,7 @@ bool DoublyLinkedList<T>::remove_first(const T& value) noexcept{
 }
 
 template <typename T>
-bool DoublyLinkedList<T>::has_item(const T& value) const noexcept{
+bool DoubleLinkedList<T>::has_item(const T& value) const noexcept{
     Node* node = begin;
     while(true){
         if (node == end && node->value != value)
@@ -82,7 +82,7 @@ bool DoublyLinkedList<T>::has_item(const T& value) const noexcept{
 }
 
 template <typename T>
-size_t DoublyLinkedList<T>::size() const noexcept{
+size_t DoubleLinkedList<T>::size() const noexcept{
     if (begin == nullptr)
         return 0;
     Node* node = begin;

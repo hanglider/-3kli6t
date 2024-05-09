@@ -4,7 +4,7 @@
 
 namespace ITrofimov {
     template <typename T>
-    class DoublyLinkedList {
+    class DoubleLinkedList {
     private:
         class Node {
         public:
@@ -18,10 +18,10 @@ namespace ITrofimov {
         Node* begin = nullptr;
         Node* end = nullptr;
     public:
-        DoublyLinkedList() noexcept {};
-        DoublyLinkedList(const DoublyLinkedList&) = delete;
-        DoublyLinkedList& operator = (const DoublyLinkedList&) = delete;
-        ~DoublyLinkedList() noexcept;
+        DoubleLinkedList() noexcept {};
+        DoubleLinkedList(const DoubleLinkedList&) = delete;
+        DoubleLinkedList& operator = (const DoubleLinkedList&) = delete;
+        ~DoubleLinkedList() noexcept;
 
         void push_back(const T& value) noexcept;
         bool has_item(const T& value) const noexcept;
