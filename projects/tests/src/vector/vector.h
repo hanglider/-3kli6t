@@ -1,7 +1,7 @@
 #pragma once
 #include <iostream>
 
-namespace IBusko {
+namespace ITrofimov {
     template <typename T>
     class Vector {
     private:

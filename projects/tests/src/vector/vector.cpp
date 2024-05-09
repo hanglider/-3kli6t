@@ -1,6 +1,6 @@
 #include "vector.h"
 
-using IBusko::Vector;
+using ITrofimov::Vector;
 
 template <typename T>
 Vector<T>::Vector() noexcept {
