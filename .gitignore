@@ -3,3 +3,5 @@ lib/
 .idea
 cmake-build-debug/
 Testing*/
+.vscode
+*/.exe

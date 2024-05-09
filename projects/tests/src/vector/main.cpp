@@ -17,5 +17,8 @@ int main() {
     //a.remove_first(69);
     //a.print();
     printf("%d \n", a.size());
+    auto t = nullptr;
+    auto r = nullptr;
+    printf("%d ", t = r);
     system("pause");
 }

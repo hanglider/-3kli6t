@@ -16,22 +16,16 @@ cd %BUILD_FOLDER%
 cmake -G %BUILD_TYPE% ..\%SOURCE_FOLDER%
 cmake --build .
 
-set arr[0].file=run_Sorting.bat
-set arr[1].file=run_Fibonacci_numbers.bat
-set arr[2].file=Diff_enviroments.bat
-set arr[3].file=OOP_console.bat
-set arr[4].file=BigInteger.bat
-set arr[5].file=tests.bat
+set arr[0].file=tests.bat
+set arr[1].file=run_double_linked_list_tests.bat
+set arr[2].file=run_vector_tests.bat
 
-set arr[0].folder=Sorting
-set arr[1].folder=Fibonacci_numbers
-set arr[2].folder=Diff_enviroments
-set arr[3].folder=OOP_console
-set arr[4].folder=BigInteger
 set arr[5].folder=tests
+set arr[6].folder=run_double_linked_list_tests
+set arr[7].folder=run_vector_tests
 
 
-for /L %%i in (4) do ( 
+for /L %%i in (0, 1, 2) do ( 
 	copy ..\%SOURCE_FOLDER%\!arr[%%i].folder!\!arr[%%i].file! .\!arr[%%i].folder!
 )
 

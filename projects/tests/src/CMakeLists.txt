@@ -1,10 +1,6 @@
-target_sources(radix_sort_lib 
-	PRIVATE
-		radix_sort.cpp
-	PUBLIC
-		radix_sort.h
-)
+add_library(${TESTS_LIB} "")
 
-target_include_directories(radix_sort_lib PUBLIC
-	"${PROJECT_SOURCE_DIR}/src"
-)
+add_subdirectory(deque)
+add_subdirectory(list)
+add_subdirectory(static_array)
+add_subdirectory(vector)
